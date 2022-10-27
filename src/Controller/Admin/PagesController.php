@@ -1,95 +1,123 @@
 <?php
-/**
- * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- * @link      https://cakephp.org CakePHP(tm) Project
- * @since     0.2.9
- * @license   https://opensource.org/licenses/mit-license.php MIT License
- */
-
 namespace App\Controller\Admin;
 
-use Cake\Core\Configure;
-use Cake\Network\Exception\ForbiddenException;
-use Cake\Network\Exception\NotFoundException;
-use Cake\View\Exception\MissingTemplateException;
-use Cake\Routing\Router;
+use Cake\Event\Event;
 
 /**
- * Static content controller
+ * Pages Controller
  *
- * This controller will render views from Template/Pages/
+ * @property \App\Model\Table\PagesTable $Pages
  *
- * @link https://book.cakephp.org/3.0/en/controllers/pages-controller.html
+ * @method \App\Model\Entity\Page[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 class PagesController extends AppController
 {
+
     /**
-     * Displays a view
+     * Index method
      *
-     * @param array ...$path Path segments.
-     * @return \Cake\Http\Response|null
-     * @throws \Cake\Network\Exception\ForbiddenException When a directory traversal attempt.
-     * @t<!-- Content Header (Page header) -->
-     * <section class="content-header">
-     * <h1>
-     * Bem Vindo a Tela Inicial
-     * </section>
-     *
-     * <section class="content">
-     * <div class="row">
-     * <div class="col-xs-12">
-     * <div class="box">
-     * <!-- /.box-header -->
-     * <div class="box-body table-responsive no-padding">
-     *
-     * </div>
-     * </div>
-     * </div>
-     * </div>
-     * </section>
-     * hrows \Cake\Network\Exception\NotFoundException When the view file could not
-     *   be found or \Cake\View\Exception\MissingTemplateException in debug mode.
+     * @return \Cake\Http\Response|void
      */
-    public function display(...$path)
+    public function index()
     {
-        $count = count($path);
-        if (!$count) {
-            return $this->redirect('/');
-        }
-        if (in_array('..', $path, true) || in_array('.', $path, true)) {
-            throw new ForbiddenException();
-        }
-        $page = $subpage = null;
+        $this->paginate = [
+            'contain' => ['Seos']
+        ];
+        $pages = $this->paginate($this->Pages);
 
-        if (!empty($path[0])) {
-            $page = $path[0];
-        }
-        if (!empty($path[1])) {
-            $subpage = $path[1];
-        }
-        $this->set(compact('page', 'subpage'));
-
-        try {
-            $this->render(implode('/', $path));
-        } catch (MissingTemplateException $exception) {
-            if (Configure::read('debug')) {
-                throw $exception;
-            }
-            throw new NotFoundException();
-        }
+        $this->set(compact('pages'));
     }
 
+    /**
+     * View method
+     *
+     * @param string|null $id Page id.
+     * @return \Cake\Http\Response|void
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function view($id = null)
+    {
+        $page = $this->Pages->get($id, [
+            'contain' => ['Seos', 'Banners', 'Photos']
+        ]);
+
+        $this->set('page', $page);
+    }
+
+    /**
+     * pagina inicial
+     */
     public function paginainicial()
     {
 
-
     }
 
+    /**
+     * Add method
+     *
+     * @return \Cake\Network\Response|void Redirects on successful add, renders view otherwise.
+     */
+    public function add()
+    {
+        $page = $this->Pages->newEntity();
+        if ($this->request->is('post')) {
+            $page = $this->Pages->patchEntity($page, $this->request->data);
+            if ($this->Pages->save($page)) {
+                $this->Flash->success(__('O {0} foi salvo com sucesso.', 'Page'));
+                return $this->redirect(['action' => 'index']);
+            } else {
+                $this->Flash->error(__('O {0} não foi salvo. Por favor, tente novamente.', 'Page'));
+            }
+        }
+        $seos = $this->Pages->Seos->find('list', ['limit' => 200]);
+        $banners = $this->Pages->Banners->find('list', ['limit' => 200]);
+        $this->set(compact('page', 'seos', 'banners'));
+        $this->set('_serialize', ['page']);
+    }
+
+    /**
+     * Edit method
+     *
+     * @param string|null $id Page id.
+     * @return \Cake\Network\Response|void Redirects on successful edit, renders view otherwise.
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
+     */
+    public function edit($id = null)
+    {
+        $page = $this->Pages->get($id, [
+            'contain' => ['Banners']
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $page = $this->Pages->patchEntity($page, $this->request->data);
+            if ($this->Pages->save($page)) {
+                $this->Flash->success(__('O {0} foi editado com sucesso.', 'Page'));
+                return $this->redirect(['action' => 'index']);
+            } else {
+                $this->Flash->error(__('O {0} não foi editado. Por favor, tente novamente.', 'Page'));
+            }
+        }
+        $seos = $this->Pages->Seos->find('list', ['limit' => 200]);
+        $banners = $this->Pages->Banners->find('list', ['limit' => 200]);
+        $this->set(compact('page', 'seos', 'banners'));
+        $this->set('_serialize', ['page']);
+    }
+
+    /**
+     * Delete method
+     *
+     * @param string|null $id Page id.
+     * @return \Cake\Network\Response|null Redirects to index.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function delete($id = null)
+    {
+        $this->request->allowMethod(['post', 'delete']);
+        $page = $this->Pages->get($id);
+        if ($this->Pages->delete($page)) {
+            $this->Flash->success(__('O {0} foi deletado com sucesso.', 'Page'));
+        } else {
+            $this->Flash->error(__('O {0} não foi deletado. Por favor, tente novamente.', 'Page'));
+        }
+        return $this->redirect(['action' => 'index']);
+    }
 }

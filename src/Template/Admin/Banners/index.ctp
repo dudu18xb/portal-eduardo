@@ -2,7 +2,8 @@
 <section class="content-header">
     <h1>
         Banners
-        <div class="pull-right"><?= $this->Html->link('<i class="fa fa-plus"></i> ' . __('Novo'), ['action' => 'add'], ['escape' => false, 'class' => 'btn btn-success text-white']) ?></div>
+        <div
+            class="pull-right"><?= $this->Html->link(__('Novo'), ['action' => 'add'], ['class' => 'btn btn-success btn-sm']) ?></div>
     </h1>
 </section>
 
@@ -16,7 +17,7 @@
                     <div class="box-tools">
                         <?php echo $this->Form->create(null, ['valueSources' => 'banners']); ?>
                         <div class="input-group input-group-sm" style="width: 320px;">
-                            <?php echo $this->Form->control('q', ['label' => false,'placeholder' =>'Pesquisar por nome','class' => 'form-control']); ?>
+                            <?php echo $this->Form->control('q', ['label' => false, 'placeholder' => 'Pesquisar por título', 'class' => 'form-control']); ?>
                             <span class="input-group-btn">
                                 <button class="btn btn-info btn-flat" type="submit">Buscar</button>
                                     <?php echo $this->Form->button('Limpar', ['action' => 'index', ['class' => 'btn btn-sucess btn-flat']]); ?>
@@ -32,10 +33,9 @@
                         <thead>
                         <tr>
                             <th><?= $this->Paginator->sort('id') ?></th>
-                            <th><?= $this->Paginator->sort('titulo') ?></th>
                             <th><?= $this->Paginator->sort('status') ?></th>
-                            <th><?= $this->Paginator->sort('created',['label' => 'Criado em']) ?></th>
-                            <th><?= $this->Paginator->sort('modified',['label' => 'Modificado em']) ?></th>
+                            <th><?= $this->Paginator->sort('title','Título') ?></th>
+                            <th><?= $this->Paginator->sort('position','Posição') ?></th>
                             <th><?= __('Ações') ?></th>
                         </tr>
                         </thead>
@@ -43,14 +43,13 @@
                         <?php foreach ($banners as $banner): ?>
                             <tr>
                                 <td><?= $this->Number->format($banner->id) ?></td>
-                                <td><?= h($banner->titulo) ?></td>
-                                <td><?= $banner->status ? __('<span class="ativo btn btn-success btn-xs">Ativo</span>') : __('<span class="inativo btn btn-danger btn-xs">Inativo</span>'); ?></td>
-                                <td><?= h($banner->created) ?></td>
-                                <td><?= h($banner->modified) ?></td>
+                                <td><?= $banner->status ? __('<span class="ativo btn btn-success btn-sm">Ativo</span>') : __('<span class="inativo btn btn-danger btn-sm">Inativo</span>'); ?></td>
+                                <td><?= h($banner->title) ?></td>
+                                <td><span class="btn btn-sm btn-sm"><?= h($positions[$banner->position]) ?></span></td>
                                 <td class="actions" style="white-space:nowrap">
-                                    <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $banner->id], ['class' => 'btn btn-info']) ?>
-                                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $banner->id], ['class' => 'btn btn-warning']) ?>
-                                    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $banner->id], ['confirm' => __('Deseja mesmo Excluir?'), 'class' => 'btn btn-danger']) ?>
+                                    <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $banner->id], ['class' => 'btn btn-info btn-sm']) ?>
+                                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $banner->id], ['class' => 'btn btn-warning btn-sm']) ?>
+                                    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $banner->id], ['confirm' => __('Confirm to delete this entry?'), 'class' => 'btn btn-danger btn-sm']) ?>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

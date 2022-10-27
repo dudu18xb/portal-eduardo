@@ -1,13 +1,13 @@
 <section class="content-header">
   <h1>
     Banner
-    <small><?=__('Editar')?></small>
+    <small><?= __('Edit') ?></small>
   </h1>
-    <ol class="breadcrumb">
-        <li>
-            <?= $this->Html->link('<i class="fa fa-arrow-left"></i> ' . __('Voltar'), ['action' => 'index'], ['escape' => false, 'class' => 'btn btn-danger text-white btn-sm']) ?>
-        </li>
-    </ol>
+  <ol class="breadcrumb">
+    <li>
+    <?= $this->Html->link('<i class="fa fa-dashboard"></i> '.__('Voltar'), ['action' => 'index'], ['escape' => false]) ?>
+    </li>
+  </ol>
 </section>
 
 <!-- Main content -->
@@ -18,49 +18,38 @@
       <!-- general form elements -->
       <div class="box box-primary">
         <div class="box-header with-border">
-          <h3 class="box-title"><?=__('Formulário')?></h3>
+          <h3 class="box-title"><?= __('Formulário') ?></h3>
         </div>
         <!-- /.box-header -->
         <!-- form start -->
-        <?php echo $this->Form->create($banner, ['type' => 'file']); ?>
+          <?php echo $this->Form->create($banner, ['type' => 'file','role' => 'form']); ?>
           <div class="box-body">
-              <div class="row">
-                  <div class="col-xs-12 col-sm-12 col-md-12">
-                      <?php echo $this->Form->input('status'); ?>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6">
-                      <?php echo $this->Form->input('titulo'); ?>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6">
-                      <?php echo $this->Form->control('imagem',['label' => 'Foto','type' => 'file']); ?>
-                  </div>
-                  <div class="col-xs-12 col-sm-4 col-md-4">
-                      <?php echo $this->Form->input('sub_titulo'); ?>
-                  </div>
-                  <div class="col-xs-12 col-sm-4 col-md-4">
-                      <?php echo $this->Form->input('link',['placeholder' => 'Exemplo: http://g1.globo.com']); ?>
-                  </div>
-                  <div class="col-xs-12 col-sm-4 col-md-4">
-                      <?php echo $this->Form->input('texto_botao'); ?>
-                  </div>
-                  <?php if(!empty($banner->imagem)){ ?>
-                  <div class="col-xs-12 col-sm-4 col-md-4">
-                      <div class="form-group">
-                          <label class="control-label">Imagem Atual</label>
-                          <a href="/files/Banners/imagem/<?php echo $banner->imagem; ?>" data-fancybox="images" data-caption="<?= h($banner->titulo) ?>" title="Visualizar Imagem de <?= h($banner->titulo) ?>">
-                              <img src="/files/Banners/imagem/<?php echo $banner->imagem; ?>"
-                                   alt='<?= h($banner->titulo) ?>' class='img-view'>
-                          </a>
-                      </div>
-                  </div>
-                  <?php } ?>
-              </div>
+          <?php
+            echo $this->Form->input('status');
+            echo $this->Form->input('title');
+              echo $this->Form->input('position',[
+                  'type' => 'select',
+                  'required' => true,
+                  'label' => 'Posição',
+                  'options' => $positions
+              ]);
+            echo $this->Form->input('image',['label' => 'Imagem','type' => 'file', 'required' => false]);
+            echo $this->Form->input('image_mobile',['label' => 'Imagem Mobile','type' => 'file', 'required' => false]);
+            echo $this->Form->input('visualization');
+            echo $this->Form->input('title_banner');
+            echo $this->Form->input('description_banner');
+            echo $this->Form->input('url_youtube');
+            echo $this->Form->input('url_page');
+            echo $this->Form->input('url_text');
+//            echo $this->Form->input('articles._ids', ['options' => $articles]);
+//            echo $this->Form->input('pages._ids', ['options' => $pages]);
+          ?>
           </div>
           <!-- /.box-body -->
           <div class="box-footer">
-            <?=$this->Form->button(__('Salvar'))?>
+            <?= $this->Form->button(__('Salvar')) ?>
           </div>
-        <?=$this->Form->end()?>
+        <?= $this->Form->end() ?>
       </div>
     </div>
   </div>

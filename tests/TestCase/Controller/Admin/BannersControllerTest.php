@@ -16,7 +16,11 @@ class BannersControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.banners'
+        'app.banners',
+        'app.articles',
+        'app.pages',
+        'app.articles_banners',
+        'app.banners_pages'
     ];
 
     /**

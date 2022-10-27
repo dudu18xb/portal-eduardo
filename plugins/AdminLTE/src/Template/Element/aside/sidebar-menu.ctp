@@ -33,22 +33,9 @@ if (file_exists($file)) {
         <li><a href="<?php echo Router::url(['controller' => 'Equipes', 'action' => 'index']); ?>"><i
                     class="fa fa-user-md" aria-hidden="true"></i>
                 Equipes</a></li>
-        <li class="treeview">
-            <a href="javascript:;">
-                <i class="fa fa-picture-o"></i> <span>Banners</span>
-                <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-            </span>
-            </a>
-            <ul class="treeview-menu">
-                <li><a href="<?php echo Router::url(['controller' => 'Banners', 'action' => 'index']); ?>"><i
-                            class="fa fa-picture-o" aria-hidden="true"></i>
-                        Banners</a></li>
-                <li><a href="<?php echo Router::url(['controller' => 'Backgroundparalax', 'action' => 'index']); ?>"><i
-                            class="fa fa-picture-o" aria-hidden="true"></i>
-                        Banner Paralax</a></li>
-            </ul>
-        </li>
+        <li><a href="<?php echo Router::url(['controller' => 'Banners', 'action' => 'index']); ?>"><i
+                    class="fa fa-picture-o" aria-hidden="true"></i>
+                Banners</a></li>
         <li class="treeview">
             <a href="javascript:;">
                 <i class="fa fa-newspaper-o"></i> <span>Blog</span>

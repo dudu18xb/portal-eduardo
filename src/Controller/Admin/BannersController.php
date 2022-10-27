@@ -2,6 +2,7 @@
 namespace App\Controller\Admin;
 
 use Cake\Event\Event;
+
 /**
  * Banners Controller
  *
@@ -12,13 +13,13 @@ use Cake\Event\Event;
 class BannersController extends AppController
 {
 
-    public function initialize()
+    public function beforeFilter(Event $event)
     {
-        parent::initialize();
+        $positions = $this->Banners->position();
+        $this->set(compact('positions'));
 
-        $this->loadComponent('Search.Prg', [
-            'actions' => ['index']
-        ]);
+        return parent::beforeFilter($event);
+
     }
 
     /**
@@ -28,10 +29,9 @@ class BannersController extends AppController
      */
     public function index()
     {
+        $banners = $this->paginate($this->Banners);
 
-        $banners = $this->Banners
-            ->find('search', ['search' => $this->request->getQueryParams()]);
-        $this->set('banners', $this->paginate($banners));
+        $this->set(compact('banners'));
     }
 
     /**
@@ -44,7 +44,7 @@ class BannersController extends AppController
     public function view($id = null)
     {
         $banner = $this->Banners->get($id, [
-            'contain' => []
+            'contain' => ['Articles', 'Pages']
         ]);
 
         $this->set('banner', $banner);
@@ -67,7 +67,9 @@ class BannersController extends AppController
                 $this->Flash->error(__('O {0} não foi salvo. Por favor, tente novamente.', 'Banner'));
             }
         }
-        $this->set(compact('banner'));
+        $articles = $this->Banners->Articles->find('list', ['limit' => 200]);
+        $pages = $this->Banners->Pages->find('list', ['limit' => 200]);
+        $this->set(compact('banner', 'articles', 'pages'));
         $this->set('_serialize', ['banner']);
     }
 
@@ -81,7 +83,7 @@ class BannersController extends AppController
     public function edit($id = null)
     {
         $banner = $this->Banners->get($id, [
-            'contain' => []
+            'contain' => ['Articles', 'Pages']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $banner = $this->Banners->patchEntity($banner, $this->request->data);
@@ -92,7 +94,9 @@ class BannersController extends AppController
                 $this->Flash->error(__('O {0} não foi editado. Por favor, tente novamente.', 'Banner'));
             }
         }
-        $this->set(compact('banner'));
+        $articles = $this->Banners->Articles->find('list', ['limit' => 200]);
+        $pages = $this->Banners->Pages->find('list', ['limit' => 200]);
+        $this->set(compact('banner', 'articles', 'pages'));
         $this->set('_serialize', ['banner']);
     }
 

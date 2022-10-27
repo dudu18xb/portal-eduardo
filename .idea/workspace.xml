@@ -1,7 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d16387bb-0fd5-4081-82d6-7b7d5854a4a1" name="Default Changelist" comment="" />
+    <list default="true" id="d16387bb-0fd5-4081-82d6-7b7d5854a4a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/Migrations/20221027002659_NovasTableas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/ArticlesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Entity/Article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Entity/Page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Table/ArticlesTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Table/AuthorsTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Table/CategoriesTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Table/PagesTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Table/PhotosTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Table/TagsTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Articles/add.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Articles/edit.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Articles/view.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Authors/view.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Categories/index.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Categories/view.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Pages/add.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Pages/edit.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Pages/index.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Pages/view.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Photos/add.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Photos/edit.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Photos/index.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Photos/view.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Admin/Tags/view.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Element/Seos/add.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Element/Seos/edit.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Element/Seos/metaseo.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template/Element/Seos/view.ctp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Fixture/ArticlesFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Fixture/AuthorsFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Fixture/CategoriesFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Fixture/PagesFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Fixture/PhotosFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Fixture/TagsFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Controller/Admin/ArticlesControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Controller/Admin/AuthorsControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Controller/Admin/CategoriesControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Controller/Admin/PagesControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Controller/Admin/PhotosControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Controller/Admin/TagsControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/ArticlesTableTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/AuthorsTableTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/CategoriesTableTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/PagesTableTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/PhotosTableTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/TagsTableTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/files/Banners/image/thumbnail-pexels-midory-pho-13672305.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/files/Banners/image_mobile/thumbnail-pexels-midory-pho-13672305.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business_backupe.sql" beforeDir="false" afterPath="$PROJECT_DIR$/business_backupe.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Migrations/schema-dump-default.lock" beforeDir="false" afterPath="$PROJECT_DIR$/config/Migrations/schema-dump-default.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/AdminLTE/src/Template/Element/aside/sidebar-menu.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/AdminLTE/src/Template/Element/aside/sidebar-menu.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/PhotosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AutoresController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AuthorsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/BackgroundparalaxController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/BannersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/BannersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/BlogsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/CategoriasController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/CategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/CategoriaservicosController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ContatoController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/EquipesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/TagsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/FotosController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/PaginasController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ServicosController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/client_secrets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BlogsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ContatoController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/About.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Autore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Backgroundparalax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/Banner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/Author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Categoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Categoriaservico.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Contato.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Equipe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Foto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/Photo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Pagina.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/Servico.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/AboutTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/AutoresTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/BackgroundparalaxTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/BannersTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/BannersTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/BlogsTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/CategoriasTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/CategoriaservicosTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/ContatoTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/EquipesTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/FotosTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/PaginasTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/ServicosTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/About/add.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/About/edit.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/About/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/About/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Autores/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Tags/add.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Autores/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Tags/edit.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Autores/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Autores/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Backgroundparalax/add.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Backgroundparalax/edit.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Backgroundparalax/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Backgroundparalax/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Banners/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Banners/add.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Banners/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Banners/edit.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Banners/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Banners/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Banners/view.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Banners/view.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Blogs/add.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Blogs/edit.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Blogs/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Articles/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Blogs/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Categorias/add.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Categorias/edit.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Categorias/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Categorias/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Categoriaservicos/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Authors/add.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Categoriaservicos/edit.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Categoriaservicos/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Categoriaservicos/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Contato/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Categories/add.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Contato/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Categories/edit.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Contato/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Authors/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Contato/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Equipes/add.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Equipes/edit.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Equipes/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Equipes/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Fotos/add.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Fotos/addabout.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Fotos/addblog.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Fotos/edit.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Fotos/editabout.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Fotos/editblog.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Fotos/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Tags/index.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Fotos/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Paginas/add.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Paginas/edit.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Paginas/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Paginas/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Servicos/add.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Servicos/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Admin/Authors/edit.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Servicos/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Admin/Servicos/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Blogs/categoria.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Blogs/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Blogs/view.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Contato/index.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Layout/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Layout/default.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Pages/about.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Pages/blog.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Pages/contact.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Pages/home.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Pages/home.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Pages/services.ctp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Fixture/BannersFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Fixture/BannersFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/Controller/Admin/BannersControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Controller/Admin/BannersControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/BannersTableTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/BannersTableTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/About/bg_missao/dept_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/About/bg_missao/thumbnail-dept_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/About/bg_topo/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/About/bg_topo/thumbnail-about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/About/bg_valores/dept_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/About/bg_valores/thumbnail-dept_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/About/bg_visao/dept_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/About/bg_visao/thumbnail-dept_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/About/imagem/about_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/About/imagem/thumbnail-about_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Backgroundparalax/imagem/58626022_2174112049371148_5931889897848700928_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Backgroundparalax/imagem/dept_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Backgroundparalax/imagem/thumbnail-58626022_2174112049371148_5931889897848700928_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Backgroundparalax/imagem/thumbnail-dept_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Banners/imagem/pexels-andrew-neel-8347199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Banners/imagem/thumbnail-pexels-andrew-neel-8347199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/58626022_2174112049371148_5931889897848700928_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/pexels-andrew-neel-8347199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/pexels-christina-morillo-1181273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/pexels-christina-morillo-1181279.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/pexels-cottonbro-4709285.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/pexels-midory-pho-13672305.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/files/Banners/image/pexels-midory-pho-13672305.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/thumbnail-58626022_2174112049371148_5931889897848700928_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/thumbnail-pexels-andrew-neel-8347199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/thumbnail-pexels-christina-morillo-1181273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/thumbnail-pexels-christina-morillo-1181279.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/thumbnail-pexels-cottonbro-4709285.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/capa/thumbnail-pexels-midory-pho-13672305.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/imagemdescricao/pexels-andrew-neel-8347199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/imagemdescricao/pexels-christina-morillo-1181273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/imagemdescricao/pexels-cottonbro-4709285.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/imagemdescricao/pexels-midory-pho-13672305.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/files/Banners/image_mobile/pexels-midory-pho-13672305.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/imagemdescricao/pexels-pixabay-270632.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/imagemdescricao/thumbnail-pexels-andrew-neel-8347199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/imagemdescricao/thumbnail-pexels-christina-morillo-1181273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/imagemdescricao/thumbnail-pexels-cottonbro-4709285.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/imagemdescricao/thumbnail-pexels-midory-pho-13672305.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/imagemdescricao/thumbnail-pexels-pixabay-270632.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/meta_image/pexels-midory-pho-13672305.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Blogs/meta_image/thumbnail-pexels-midory-pho-13672305.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Equipes/imagem/pexels-andrew-neel-2312369.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Equipes/imagem/thumbnail-pexels-andrew-neel-2312369.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/FotoAbouts/foto/imagem1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/FotoAbouts/foto/thumbnail-imagem1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Fotos/imagem/pexels-christina-morillo-1181273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/files/Fotos/imagem/thumbnail-pexels-christina-morillo-1181273.jpg" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,98 +236,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Table/AuthorsTable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Table/BannersTable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1803">
+              <caret line="294" column="44" selection-start-line="294" selection-start-column="44" selection-end-line="294" selection-end-column="44" />
+              <folding>
+                <element signature="e#34#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/Admin/BannersController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Table/CategoriesTable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Table/PagesTable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Table/TagsTable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/Admin/Banners/add.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="35" column="39" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Model/Table/BlogsTable.php">
+        <entry file="file://$PROJECT_DIR$/src/Template/Admin/Banners/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="258" column="26" selection-start-line="258" selection-start-column="26" selection-end-line="258" selection-end-column="26" />
-              <folding>
-                <element signature="e#34#60#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="570">
+              <caret line="45" column="162" lean-forward="true" selection-start-line="45" selection-start-column="162" selection-end-line="45" selection-end-column="168" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/Layout/default.ctp">
+        <entry file="file://$PROJECT_DIR$/src/Template/Admin/Banners/edit.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+            <state relative-caret-position="433">
+              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/PagesController.php">
+        <entry file="file://$PROJECT_DIR$/src/Model/Table/PhotosTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="253" column="33" selection-start-line="253" selection-start-column="33" selection-end-line="253" selection-end-column="33" />
-              <folding>
-                <element signature="e#602#621#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/Blogs/view.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="73" column="52" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/AdminLTE/src/Template/Element/aside/sidebar-menu.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/Migrations/20220606030330_DescricaoBlog.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/Migrations/20211124005308_NovosCamposconfig.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/Migrations/20220605172121_CriandoNovosCamposBlogs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/Admin/Blogs/edit.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="763">
-              <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+            <state relative-caret-position="783">
+              <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -127,14 +333,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getFirstProfileId</find>
-      <find>.navbar-nav&gt;.user-menu .user-image</find>
-      <find>.user-panel&gt;.image&gt;img</find>
-      <find>favicon_site</find>
-      <find>.img-thumb, .img-view</find>
-      <find>box box-primary</find>
-      <find>.img-thumb</find>
-      <find>KEY_FILE_LOCATION</find>
       <find>google/apiclient'</find>
       <find>getResults</find>
       <find>dash</find>
@@ -157,6 +355,14 @@
       <find>topbar</find>
       <find>blog_id</find>
       <find>Descricao</find>
+      <find>autores</find>
+      <find>categorias</find>
+      <find>sec-wrap-emphasis</find>
+      <find>box</find>
+      <find>box-tools</find>
+      <find>seo_id</find>
+      <find>sizes</find>
+      <find>btn-xs</find>
     </findStrings>
     <replaceStrings>
       <replace>business</replace>
@@ -177,57 +383,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Template/Admin/Contato/add.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Contato/view.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Contato/edit.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Configs/view.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Banners/add.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Banners/view.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Banners/edit.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Autores/add.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Autores/view.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Autores/edit.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Users/add.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Users/view.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Users/edit.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Fotos/editabout.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Fotos/addabout.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Fotos/editblog.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/About/add.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/About/view.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/About/edit.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Configs/edit.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Element/paginacao.ctp" />
-        <option value="$PROJECT_DIR$/src/Controller/BlogsController.php" />
-        <option value="$PROJECT_DIR$/plugins/AdminLTE/webroot/css/estilo.css" />
-        <option value="$PROJECT_DIR$/webroot/css/bisness-style.css" />
-        <option value="$PROJECT_DIR$/webroot/css/bisness-responsive.css" />
-        <option value="$PROJECT_DIR$/src/Template/Blogs/view.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Blogs/index.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Blogs/categoria.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Pages/home.ctp" />
-        <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
-        <option value="$PROJECT_DIR$/src/Template/Layout/default.ctp" />
-        <option value="$PROJECT_DIR$/webroot/css/style.scss" />
-        <option value="$PROJECT_DIR$/config/Migrations/20220605172121_CriandoNovosCamposBlogs.php" />
-        <option value="$PROJECT_DIR$/src/Model/Entity/Blog.php" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Blogs/add.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Blogs/edit.ctp" />
-        <option value="$PROJECT_DIR$/src/Controller/Admin/BlogsController.php" />
-        <option value="$PROJECT_DIR$/src/Model/Entity/Foto.php" />
-        <option value="$PROJECT_DIR$/src/Model/Table/BlogsTable.php" />
-        <option value="$PROJECT_DIR$/src/Controller/Admin/FotosController.php" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Fotos/add.ctp" />
-        <option value="$PROJECT_DIR$/config/Migrations/20220606030330_DescricaoBlog.php" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Fotos/index.ctp" />
-        <option value="$PROJECT_DIR$/src/Model/Table/AboutTable.php" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Blogs/view.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Fotos/edit.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Admin/Fotos/addblog.ctp" />
-        <option value="$PROJECT_DIR$/src/Model/Table/FotosTable.php" />
-        <option value="$PROJECT_DIR$/plugins/AdminLTE/src/Template/Element/aside/sidebar-menu.ctp" />
         <option value="$PROJECT_DIR$/config/routes.php" />
-        <option value="$PROJECT_DIR$/src/Controller/PagesController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Photos/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Photos/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Element/Seos/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Element/Seos/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Tags/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Tags/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Pages/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Pages/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Categories/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Categories/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Authors/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Authors/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Articles/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Articles/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Model/Entity/Article.php" />
+        <option value="$PROJECT_DIR$/src/Model/Entity/Author.php" />
+        <option value="$PROJECT_DIR$/src/Model/Entity/Category.php" />
+        <option value="$PROJECT_DIR$/src/Model/Entity/Page.php" />
+        <option value="$PROJECT_DIR$/src/Model/Entity/Tag.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/PagesController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/ArticlesController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/AuthorsController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/CategoriesController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/PhotosController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/TagsController.php" />
+        <option value="$PROJECT_DIR$/plugins/AdminLTE/src/Template/Element/aside/sidebar-menu.ctp" />
+        <option value="$PROJECT_DIR$/src/Model/Table/ArticlesTable.php" />
+        <option value="$PROJECT_DIR$/src/Model/Table/AuthorsTable.php" />
+        <option value="$PROJECT_DIR$/src/Model/Table/CategoriesTable.php" />
+        <option value="$PROJECT_DIR$/src/Model/Table/PagesTable.php" />
+        <option value="$PROJECT_DIR$/src/Model/Table/PhotosTable.php" />
+        <option value="$PROJECT_DIR$/src/Model/Table/TagsTable.php" />
+        <option value="$PROJECT_DIR$/src/Model/Table/BannersTable.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/BannersController.php" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Banners/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Banners/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Articles/view.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Articles/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Authors/view.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Authors/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Banners/view.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Banners/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Pages/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Categories/view.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Photos/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Categories/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Tags/view.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Tags/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Admin/Pages/view.ctp" />
       </list>
     </option>
   </component>
@@ -346,6 +552,17 @@
             <path>
               <item name="business" type="b2602c69:ProjectViewProjectNode" />
               <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="Migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -377,6 +594,27 @@
             <path>
               <item name="business" type="b2602c69:ProjectViewProjectNode" />
               <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Banners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
               <item name="webroot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -390,7 +628,15 @@
               <item name="business" type="462c0819:PsiDirectoryNode" />
               <item name="webroot" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="Blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="Banners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="webroot" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="Banners" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -408,19 +654,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Template/Element" />
+      <recent name="$PROJECT_DIR$/src/Template" />
+      <recent name="$PROJECT_DIR$/webroot/img" />
+      <recent name="$PROJECT_DIR$/webroot/js" />
+      <recent name="$PROJECT_DIR$/config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/webroot/js" />
       <recent name="$PROJECT_DIR$/webroot/css" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/plugins/AdminLTE" />
       <recent name="$PROJECT_DIR$/webroot" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/webroot/img" />
-      <recent name="$PROJECT_DIR$/webroot/js" />
-      <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/webroot/css" />
-      <recent name="$PROJECT_DIR$/webroot/js/newjs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -520,12 +766,13 @@
       <workItem from="1654131222009" duration="728000" />
       <workItem from="1654445737568" duration="4172000" />
       <workItem from="1654479675466" duration="4604000" />
-      <workItem from="1666745133839" duration="2794000" />
+      <workItem from="1666745133839" duration="3761000" />
+      <workItem from="1666826492953" duration="15692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333282000" />
+    <option name="totallyTimeSpent" value="349941000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,7 +786,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1001" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31483456" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3185699" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -552,9 +799,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007576" side_tool="true" weight="0.33275262" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007576" side_tool="true" weight="0.3317919" />
       <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49924242" visible="true" weight="0.37803468" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49924242" weight="0.37803468" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="13" weight="0.3292683" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -589,306 +836,358 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plugins/AdminLTE/src/Template/Element/aside-control-sidebar.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Pages/home.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+        <state relative-caret-position="435">
+          <caret line="67" column="17" lean-forward="true" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/AdminLTE/src/Template/Element/nav-top.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/css/jquery.fancybox.css" />
-    <entry file="file://$PROJECT_DIR$/src/Template/Element/paginacao.ctp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/AdminLTE/webroot/css/estilo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/img/logo.svg" />
-    <entry file="file://$PROJECT_DIR$/webroot/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/js/fancybox.umd.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/css/bisness-responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="293" column="1" selection-start-line="293" selection-start-column="1" selection-end-line="293" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/css/bisness-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73710">
-          <caret line="4914" column="22" selection-start-line="4914" selection-start-column="22" selection-end-line="4914" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Blogs/categoria.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="6" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/ContactForm.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4320">
-          <caret line="288" column="32" selection-start-line="288" selection-start-column="32" selection-end-line="288" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Pages/home.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="135" column="49" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Blogs/add.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Users/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="60" selection-end-column="30" />
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="30" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Blog.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Articles/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state relative-caret-position="360">
+          <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Authors/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="95" column="30" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="30" />
+        <state relative-caret-position="345">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Categories/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Pages/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Tags/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Photos/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Photos/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="89" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Seos/add.ctp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Migrations/20221027002659_NovasTableas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
           <folding>
-            <element signature="e#603#634#0#PHP" expanded="true" />
+            <element signature="e#6#39#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Blogs/index.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/Seos/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="107" selection-start-line="24" selection-start-column="40" selection-end-line="25" selection-end-column="107" />
+        <state relative-caret-position="273">
+          <caret line="51" column="15" lean-forward="true" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BlogsController.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/Seos/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="192" column="21" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
+        <state relative-caret-position="150">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Foto.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Categories/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Fotos/add.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Categories/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/BannersController.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Pages/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-689">
-          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/AboutTable.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Pages/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/FotosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2045">
-          <caret line="149" column="58" selection-start-line="149" selection-start-column="58" selection-end-line="149" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Fotos/index.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Photos/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Blogs/view.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Tags/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/BlogsController.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Tags/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="84" column="31" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/files/Blogs/capa/thumbnail-pexels-andrew-neel-8347199.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/files/Blogs/capa/pexels-cottonbro-4709285.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/files/Blogs/capa/58626022_2174112049371148_5931889897848700928_n.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/files/Blogs/capa/pexels-andrew-neel-8347199.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/files/Fotos/imagem/foto.png" />
-    <entry file="file://$PROJECT_DIR$/webroot/files/Fotos/imagem/thumbnail-foto.png" />
-    <entry file="file://$PROJECT_DIR$/webroot/files/Fotos/imagem/thumbnail-pexels-pixabay-270632.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Fotos/edit.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Authors/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Fotos/editblog.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Authors/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="525">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/files/Fotos/imagem/pexels-pixabay-270632.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Fotos/addblog.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Articles/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" column="44" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+        <state relative-caret-position="363">
+          <caret line="28" column="64" lean-forward="true" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/FotosTable.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Articles/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2085">
-          <caret line="144" column="5" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
+        <state relative-caret-position="423">
+          <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Author.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
-            <element signature="e#34#60#0#PHP" expanded="true" />
+            <element signature="e#35#55#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business_backupe.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Banner.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/Migrations/20220606030330_DescricaoBlog.php">
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="e#35#55#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/Migrations/20211124005308_NovosCamposconfig.php">
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="e#35#55#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/Migrations/20220605172121_CriandoNovosCamposBlogs.php">
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Photo.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="435">
+          <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding>
+            <element signature="e#35#55#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Layout/default.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/ArticlesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+        <state relative-caret-position="45">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/AuthorsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/AdminLTE/src/Template/Element/aside/sidebar-menu.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        <state relative-caret-position="528">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/PagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PagesController.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/CategoriesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="253" column="33" selection-start-line="253" selection-start-column="33" selection-end-line="253" selection-end-column="33" />
+        <state relative-caret-position="45">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/PhotosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/TagsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/files/Banners/image/thumbnail-pexels-hert-niks-14103314.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/files/Banners/image/pexels-hert-niks-14103314.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/ArticlesTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="97" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/AuthorsTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/CategoriesTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/PagesTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/PhotosTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/TagsTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/BannersTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1803">
+          <caret line="294" column="44" selection-start-line="294" selection-start-column="44" selection-end-line="294" selection-end-column="44" />
           <folding>
-            <element signature="e#602#621#0#PHP" expanded="true" />
+            <element signature="e#34#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Blogs/view.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/BannersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="73" column="52" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
+        <state relative-caret-position="240">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Blogs/edit.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Banners/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+        <state relative-caret-position="433">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/BlogsTable.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Banners/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="258" column="26" selection-start-line="258" selection-start-column="26" selection-end-line="258" selection-end-column="26" />
-          <folding>
-            <element signature="e#34#60#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Admin/Banners/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="45" column="162" lean-forward="true" selection-start-line="45" selection-start-column="162" selection-end-line="45" selection-end-column="168" />
         </state>
       </provider>
     </entry>

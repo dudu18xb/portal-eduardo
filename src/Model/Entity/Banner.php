@@ -7,14 +7,22 @@ use Cake\ORM\Entity;
  * Banner Entity
  *
  * @property int $id
- * @property string $titulo
- * @property string $imagem
  * @property bool $status
- * @property string $link
- * @property string $texto_botao
- * @property string $sub_titulo
+ * @property string $title
+ * @property string $position
+ * @property string $image
+ * @property string $image_mobile
+ * @property string $visualization
+ * @property string $title_banner
+ * @property string $description_banner
+ * @property string $url_youtube
+ * @property string $url_page
+ * @property string $url_text
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ *
+ * @property \App\Model\Entity\Article[] $articles
+ * @property \App\Model\Entity\Page[] $pages
  */
 class Banner extends Entity
 {
@@ -29,13 +37,20 @@ class Banner extends Entity
      * @var array
      */
     protected $_accessible = [
-        'titulo' => true,
-        'imagem' => true,
         'status' => true,
-        'link' => true,
-        'texto_botao' => true,
-        'sub_titulo' => true,
+        'title' => true,
+        'position' => true,
+        'image' => true,
+        'image_mobile' => true,
+        'visualization' => true,
+        'title_banner' => true,
+        'description_banner' => true,
+        'url_youtube' => true,
+        'url_page' => true,
+        'url_text' => true,
         'created' => true,
-        'modified' => true
+        'modified' => true,
+        'articles' => true,
+        'pages' => true
     ];
 }

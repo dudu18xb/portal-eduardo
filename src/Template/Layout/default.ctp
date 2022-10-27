@@ -79,188 +79,19 @@ $cakeTitle = 'Pía do Céu';
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
-<header>
-    <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
-    <div class="page-wrapper">
-        <div class="preloader">
-            <div class="inner">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-    <section>
-        <div class="hearder_area">
-            <div id="header_sticky" class="mainmenu_area">
-                <div class="container">
-                    <div class="row d-flex flex-wrap align-items-center">
-                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-10">
-                            <div class="logo">
-                                <a href="<?php echo Router::url(['controller' => 'pages', 'action' => 'home', 'prefix' => false], true); ?>" title="<?php echo h($cakeTitle); ?>">
-                                    <?php echo $this->Html->image('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', [
-                                        'alt' => 'Imagem ' . $cakeTitle,
-                                        'class' => 'lazy',
-                                        'data-src' => '/img/logo/logo-branca.png',
-                                    ]); ?>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-2 text-right">
-                            <div class="mainmenu">
-                                <ul id="nav">
-                                    <li>
-                                        <a href="<?php echo Router::url(['controller' => 'pages', 'action' => 'home', 'prefix' => false], true); ?>" title="Home">Home</a>
-                                    </li>
-                                    <li><a href="<?php echo Router::url(['controller' => 'pages', 'action' => 'about', 'prefix' => false], true); ?>" title="Quem Somos">Quem Somos</a></li>
-                                    <li><a href="<?php echo Router::url(['controller' => 'Blogs', 'action' => 'index']); ?>" title="BLog">BLog <?php if ($verificaCategoriaBlogsMenus > 0) { ?><i class="fa fa-angle-down"></i> <?php } ?></a>
-                                        <?php if ($verificaCategoriaBlogsMenus > 0) { ?>
-                                            <ul class="sub-menu text-left">
-                                                <?php foreach ($categoriaBlogsMenus as $categoria) { ?>
-                                                    <li><a href="<?php echo Router::url(['controller' => 'Blogs', 'action' => 'categoria', 'categoria_slug' => $categoria->slug]); ?>" title="<?php echo h($categoria->nome); ?>"><?php echo h($categoria->nome); ?></a></li>
-                                                <?php } ?>
-                                            </ul>
-                                        <?php } ?>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</header>
+
+
 <main>
     <?= $this->fetch('content') ?>
 </main>
 
-<footer>
-    <div class="footer-top-area section-divide">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-10">
-                    <div class="footer-wrapper">
-                        <div class="logo">
-                            <a href="<?php echo Router::url(['controller' => 'pages', 'action' => 'home', 'prefix' => false], true); ?>" title="<?php echo h($cakeTitle); ?>">
-                                <?php echo $this->Html->image('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', [
-                                    'alt' => 'Imagem ' . $cakeTitle,
-                                    'class' => 'lazy',
-                                    'data-src' => '/img/logo/logo-branca.png',
-                                ]); ?>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer-wrapper">
-                        <h4 class="footer-text">Informações</h4>
-                        <ul class="footer-menu">
-                            <li><a href="<?php echo Router::url(['controller' => 'pages', 'action' => 'home', 'prefix' => false], true); ?>" title="Home" class="text-nowrap"><i class="fa fa-caret-right"></i>Home</a></li>
-                            <li><a href="<?php echo Router::url(['controller' => 'pages', 'action' => 'about', 'prefix' => false], true); ?>" title="Quem Somos" class="text-nowrap"><i class="fa fa-caret-right"></i>Quem Somos</a></li>
-                            <li><a href="<?php echo Router::url(['controller' => 'Blogs', 'action' => 'index', 'prefix' => false], true); ?>" title="Blogs" class="text-nowrap"><i class="fa fa-caret-right"></i>Blogs</a></li>
-                            <?php if ($verificaCategoriaBlogsMenus > 0) { ?>
-                                <?php foreach ($categoriaBlogsMenus as $categoria) { ?>
-                                    <li><a href="<?php echo Router::url(['controller' => 'Blogs', 'action' => 'categoria', 'categoria_slug' => $categoria->slug]); ?>" title="<?php echo h($categoria->nome); ?>" class="text-nowrap"><i class="fa fa-caret-right"></i><?php echo h($categoria->nome); ?></a></li>
-                                <?php } ?>
-                            <?php } ?>
-                        </ul>
-                    </div>
-                </div>
-                <?php if ($verificaLastblogsMenu > 0) { ?>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="footer-wrapper">
-                            <h4 class="footer-text">Outros Posts</h4>
-                            <ul class="footers">
-                                <?php foreach ($lastblogsMenu as $blog) { ?>
-                                    <li>
-                                        <div class="footer-img">
-                                            <a href="<?php echo Router::url(['controller' => 'Blogs', 'action' => 'view', 'categoria_slug' => $blog->categoria->slug, 'slug' => $blog->slug]); ?>"
-                                               title="<?php echo strip_tags(substr($blog->titulo, 0, 50)); ?>">
-                                                <?php echo $this->Html->image('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', [
-                                                    'alt' => 'Imagem ' . $blog->titulo,
-                                                    'class' => 'lazy',
-                                                    'data-src' => '/files/Blogs/capa/' . $blog->capa,
-                                                ]); ?>
-                                            </a>
-                                        </div>
-                                        <div class="footer-info">
-                                            <span><?php echo (new \Cake\I18n\FrozenDate($blog->data))->nice(); ?></span>
-                                            <h4 class="mbb-0-i">
-                                                <a href="<?php echo Router::url(['controller' => 'Blogs', 'action' => 'view', 'categoria_slug' => $blog->categoria->slug, 'slug' => $blog->slug]); ?>"
-                                                   title="<?php echo strip_tags(substr($blog->titulo, 0, 50)); ?>">
-                                                    <?php echo strip_tags(substr($blog->titulo, 0, 50)); ?>
-                                                </a>
-                                            </h4>
-                                        </div>
-                                    </li>
-                                <?php } ?>
-                            </ul>
-                        </div>
-                    </div>
-                <?php } ?>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                    <div class="footer-wrapper">
-                        <h4 class="footer-text">Cortes Piá do Céu</h4>
-                        <ul class="footers">
-                            <li>
-                                <div class="footer-img">
-                                    <a href="#"><img src="img/img-1.jpg" alt=""></a>
-                                </div>
-                                <div class="footer-info">
-                                    <h4><a href="#">How to Improve Your Sales Volume</a></h4>
-                                    <span>24th Aug 2019</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="footer-img">
-                                    <a href="#"><img src="img/img-2.jpg" alt=""></a>
-                                </div>
-                                <div class="footer-info">
-                                    <h4><a href="#">How to Improve Your Sales Volume</a></h4>
-                                    <span>24th Aug 2019</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bootom-area pt-40 mt-40">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <div class="copyright">
-                        <?php $year = (new DateTime)->format("Y"); ?>
-                        <p>Copyright © <?php echo $year ?> - <?php echo h($cakeTitle); ?> - Todos os direitos reservados</p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <div class="footer-icon">
-                        <?php if(!empty($configs->facebook)){ ?>
-                            <a href="<?php echo h($configs->facebook) ?>" target="_blank" title="Acessar fanpage do Facebook"><i class="fa fa-facebook"></i></a>
-                        <?php } ?>
-                        <?php if(!empty($configs->instagram)){ ?>
-                            <a href="<?php echo h($configs->instagram) ?>" target="_blank" title="Acessar o perfil do Instagram"><i class="fa fa-instagram"></i></a>
-                        <?php } ?>
 
-                        <?php if(!empty($configs->twitter)){ ?>
-                            <a href="<?php echo h($configs->twitter) ?>" target="_blank" title="Acessar o perfil do Twitter"><i class="fa fa-twitter"></i></a>
-                        <?php } ?>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
 
 <?php echo $this->Html->script([

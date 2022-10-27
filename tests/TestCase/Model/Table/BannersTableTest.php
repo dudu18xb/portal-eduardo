@@ -24,7 +24,9 @@ class BannersTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.banners'
+        'app.banners',
+        'app.articles',
+        'app.pages'
     ];
 
     /**

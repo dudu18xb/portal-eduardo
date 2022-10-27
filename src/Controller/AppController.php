@@ -46,8 +46,6 @@ class AppController extends Controller
         parent::initialize();
 
         $this->loadModel('Configs');
-        $this->loadModel('Blogs');
-        $this->loadModel('Categorias');
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
 
@@ -55,47 +53,8 @@ class AppController extends Controller
             ->find()
             ->first();
 
-        $categoriaBlogsMenus = $this->Categorias
-            ->find()
-            ->join([
-                'Blogs' => [
-                    'table' => 'blogs',
-                    'type' => 'inner',
-                    'conditions' => [
-                        'Blogs.categoria_id = Categorias.id',
-                        'Blogs.status' => true,
-                    ],
-                ],
-            ])
-            ->limit(20)
-            ->group([
-                'Categorias.id',
-                'Categorias.nome',
-            ])
-            ->order(['Categorias.id' =>'ASC'])
-            ->all();
 
-        $verificaCategoriaBlogsMenus = count($categoriaBlogsMenus);
-
-        $lastblogsMenu = $this->Blogs
-            ->find()
-            ->contain([
-                'Categorias',
-                'Autores',
-            ])
-            ->where(function (QueryExpression $expression)  {
-                $expression
-                    ->eq('Blogs.status', true)
-                    ->lte('Blogs.data', new \DateTime());
-
-                return $expression;
-            })
-            ->limit(2)
-            ->order('rand()');
-
-        $verificaLastblogsMenu = count($lastblogsMenu);
-
-        $this->set(compact('configs','categoriaBlogsMenus','verificaCategoriaBlogsMenus','verificaLastblogsMenu','lastblogsMenu'));
+        $this->set(compact('configs'));
 
 
         /*

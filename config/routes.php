@@ -51,44 +51,14 @@ Router::scope('/', function (RouteBuilder $routes) {
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'home']);
-    $routes->connect('/sobre-nos', ['controller' => 'Pages', 'action' => 'about']);
-    $routes->connect('/servicos', ['controller' => 'Pages', 'action' => 'services']);
-    $routes->connect('/blogs', ['controller' => 'Blogs', 'action' => 'index']);
-    $routes->connect(
-        '/blog/:categoria_slug/:slug',
-        ['controller' => 'Blogs', 'action' => 'view'],
-        [
-            'pass' => ['categoria_slug','slug'],
-            'categoria_slug' => '[^\/]+', // Taken from your example
-            'slug' => '[^\/]+' // Taken from your example
-        ]
-    );
-    $routes->connect(
-        '/blogs/:categoria_slug',
-        ['controller' => 'Blogs', 'action' => 'categoria'],
-        [
-            'pass' => ['categoria_slug'],
-            'categoria_slug' => '[^\/]+', // Taken from your example
-        ]
-    );
-    //$routes->connect('/contato', ['controller' => 'Pages', 'action' => 'display', 'contact']);
-    $routes->connect('/contato', ['controller' => 'Contato', 'action' => 'index']);
+
 
     /*Painel*/
     Router::prefix('admin', function ($routes) {
         $routes->connect('/', ['controller' => 'Users', 'action' => 'login']);
         $routes->connect('/pagina-inicial', ['controller' => 'Pages', 'action' => 'paginainicial']);
         $routes->connect('/usuarios', ['controller' => 'Users', 'action' => 'index']);
-        $routes->connect('/banners', ['controller' => 'Banners', 'action' => 'index']);
-        $routes->connect('/equipes', ['controller' => 'Equipes', 'action' => 'index']);
         $routes->connect('/configuracao', ['controller' => 'Configs', 'action' => 'index']);
-        $routes->connect('/categoria-servicos', ['controller' => 'Categoriaservicos', 'action' => 'index']);
-        $routes->connect('/servicos', ['controller' => 'Servicos', 'action' => 'index']);
-        $routes->connect('/institucional', ['controller' => 'About', 'action' => 'index']);
-        $routes->connect('/fotos-institucional', ['controller' => 'FotoAbouts', 'action' => 'index']);
-        $routes->connect('/blog', ['controller' => 'Blogs', 'action' => 'index']);
-        $routes->connect('/blog/autores', ['controller' => 'Autores', 'action' => 'index']);
-        $routes->connect('/contato', ['controller' => 'Contato', 'action' => 'index']);
         $routes->fallbacks(DashedRoute::class);
     });
 
