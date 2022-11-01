@@ -9,18 +9,19 @@ use Cake\Routing\Router;
 
 
 ?>
+
 <section>
     <div class="sec-wrap-emphasis">
-        <div class="container">
+        <div class="container-default">
             <div class="content-emphasis">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7">
-                        <a href="https://images.pexels.com/photos/14103314/pexels-photo-14103314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="link-emphasis" title="teste">
+                        <a href="https://images.pexels.com/photos/14003122/pexels-photo-14003122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="link-emphasis" title="teste">
                             <div class="emphasis-image">
                                 <?php echo $this->Html->image('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', [
                                     'alt' => 'Imagem ',
                                     'class' => 'lazy',
-                                    'data-src' => 'https://images.pexels.com/photos/14103314/pexels-photo-14103314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+                                    'data-src' => 'https://images.pexels.com/photos/14003122/pexels-photo-14003122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
                                 ]); ?>
                             </div>
                             <div class="emphasis-description">
@@ -34,12 +35,12 @@ use Cake\Routing\Router;
                         <div class="w-100 float-left">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                    <a href="https://images.pexels.com/photos/14103314/pexels-photo-14103314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="link-emphasis" title="teste">
+                                    <a href="https://images.pexels.com/photos/14003122/pexels-photo-14003122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="link-emphasis" title="teste">
                                         <div class="emphasis-image">
                                             <?php echo $this->Html->image('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', [
                                                 'alt' => 'Imagem ',
                                                 'class' => 'lazy',
-                                                'data-src' => 'https://images.pexels.com/photos/14103314/pexels-photo-14103314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+                                                'data-src' => 'https://images.pexels.com/photos/14003122/pexels-photo-14003122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
                                             ]); ?>
                                         </div>
                                         <div class="emphasis-description">
@@ -50,12 +51,12 @@ use Cake\Routing\Router;
                                     </a>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                    <a href="https://images.pexels.com/photos/14103314/pexels-photo-14103314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="link-emphasis" title="teste">
+                                    <a href="https://images.pexels.com/photos/14003122/pexels-photo-14003122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="link-emphasis" title="teste">
                                         <div class="emphasis-image">
                                             <?php echo $this->Html->image('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', [
                                                 'alt' => 'Imagem ',
                                                 'class' => 'lazy',
-                                                'data-src' => 'https://images.pexels.com/photos/14103314/pexels-photo-14103314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+                                                'data-src' => 'https://images.pexels.com/photos/14003122/pexels-photo-14003122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
                                             ]); ?>
                                         </div>
                                         <div class="emphasis-description">
