@@ -1379,10 +1379,10 @@
           background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8407738095) 0%, rgba(0, 0, 0, 0) 70%);
           background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.8407738095) 0%, rgba(0, 0, 0, 0) 70%);
           background: linear-gradient(0deg, rgba(0, 0, 0, 0.8407738095) 0%, rgba(0, 0, 0, 0) 70%);
-          -webkit-transition: all 0.2s;
-          -o-transition: all 0.2s;
-          -moz-transition: all 0.2s;
-          transition: all 0.2s; }
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
         .sec-wrap-emphasis .content-emphasis .link-emphasis .emphasis-image img {
           width: 100%;
           float: left;
@@ -1453,10 +1453,10 @@
                   transform: scale(1.1); }
         .sec-wrap-emphasis .content-emphasis .link-emphasis:hover .emphasis-image:after {
           background: rgba(0, 0, 0, 0.65);
-          -webkit-transition: all 0.2s;
-          -o-transition: all 0.2s;
-          -moz-transition: all 0.2s;
-          transition: all 0.2s; }
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
     .sec-wrap-emphasis .content-emphasis > .row > div:nth-child(1) {
       padding-right: 0; }
       @media only screen and (max-width: 1199px) {
