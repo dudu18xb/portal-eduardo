@@ -18,7 +18,7 @@ use Cake\Routing\Router;
  * @var \App\Model\Entity\Blog $blog
  */
 
-$cakeTitle = 'Pía do Céu';
+$cakeTitle = 'Eduardo';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -31,73 +31,17 @@ $cakeTitle = 'Pía do Céu';
     <meta name="theme-color" content="#28C5BC">
     <meta name="apple-mobile-web-app-status-bar-style" content="#325A7E">
     <meta name="msapplication-navbutton-color" content="#325A7E">
-    <meta name='application-name' content='<?php if (!empty($seo)) {
-        echo $cakeTitle . " | " . $seo['title'];
-    } else {
-        echo $cakeTitle;
-    } ?>'>
-    <meta property="og:site_name" content="<?php echo $cakeTitle; ?>"/>
-    <title> <?php if (!empty($seo)) {
-            if ($seo['title'] == null) {
-                echo $cakeTitle;
-            } else {
-                echo $seo['title'] . " | " . $cakeTitle;
-            }
-        } else {
-            echo $cakeTitle;
-        } ?></title>
-    <?php if (!empty($seo)) { ?>
-        <meta property="og:locale" content="pt_BR"/>
-        <meta property="og:url" content="<?php echo $seo['url']; ?>"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="<?php if (!empty($seo)) {
-            echo $cakeTitle . " | " . $seo['title'];
-        } else {
-            echo $cakeTitle;
-        } ?>"/>
-        <meta property="og:description" content="<?php echo $seo['description']; ?>"/>
-        <meta property="og:keywords" content="<?php echo $seo['keywords']; ?>"/>
-        <?php if (!empty($blog)) { ?>
-            <meta property="og:image" content="/files/Blogs/capa/<?php echo h($blog->capa) ?>">
-            <meta property="og:image:type" content="image/jpeg">
-            <meta property="og:image:width" content="800">
-            <meta property="og:image:height" content="600">
-        <?php } ?>
-        <meta name="title" content="<?php if (!empty($seo)) {
-            echo $cakeTitle . " | " . $seo['title'];
-        } else {
-            echo $cakeTitle;
-        } ?>">
-        <meta name="description" content="<?php echo $seo['description']; ?>">
-        <meta name="keywords" content="<?php echo $seo['keywords']; ?>">
-        <meta name='twitter:card' content='summary'>
-        <meta name='twitter:url' content='<?php echo $seo['url']; ?>'>
-        <meta name='twitter:title' content='<?php if (!empty($seo)) {
-            echo $cakeTitle . " | " . $seo['title'];
-        } else {
-            echo $cakeTitle;
-        } ?>'>
-        <meta name='twitter:description' content='<?php echo $seo['description']; ?>'>
-    <?php } ?>
 
     <?= $this->Html->meta('icon') ?>
 
     <!-- importando os novos estilos -->
     <?php
-    //    echo $this->Html->css('font-awesome.min');
-    //    echo $this->Html->css('flaticon');
-    //    echo $this->Html->css('themify-icons');
-    //    echo $this->Html->css('owl.carousel.min');
-    //    echo $this->Html->css('animate.min');
-    //    echo $this->Html->css('line-awesome');
-    //    echo $this->Html->css('bootstrap.min');
-    //    echo $this->Html->css('fancybox');
-    //    echo $this->Html->css('magnific-popup');
-    //    echo $this->Html->css('slicknav');
-    //    echo $this->Html->css('normalize');
-    //    echo $this->Html->css('bisness-style');
-    //    echo $this->Html->css('bisness-responsive');
-    echo $this->Html->css('style');
+    echo $this->Html->css('bootstrap.min'); // Boostrap 4
+    echo $this->Html->css('all.min'); //FontAwesome 6.2
+    echo $this->Html->css('flaticon');
+    echo $this->Html->css('normalize');
+    echo $this->Html->css('animate.min');
+    echo $this->Html->css('style'); // style pessoal
     ?>
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800&amp;display=swap" rel="stylesheet"> -->
 
@@ -105,112 +49,44 @@ $cakeTitle = 'Pía do Céu';
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
-
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.37.0/dist/full.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Material Designer -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-<div class="drawer">
-    <input id="my-drawer" type="checkbox" class="drawer-toggle"/>
-    <div class="drawer-content">
-        <!-- Page content here -->
-
-        <!-- HEADER -->
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <label class="btn btn-ghost btn-circle" for="my-drawer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M4 6h16M4 12h16M4 18h7"/>
-                        </svg>
-                    </label>
-
-                </div>
+<header>
+    <section class="sec-header-main">
+        <div class="container">
+            <div class="logo-wrap">
+                <a href="javascript:;" class="logo-link">
+                    <img src="https://images.pexels.com/photos/14792109/pexels-photo-14792109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </a>
             </div>
-            <div class="navbar-center">
-                <a class="btn btn-ghost normal-case text-xl">Eduardo Rocha</a>
-            </div>
-            <div class="navbar-end">
-                <button class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                         stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-                    </svg>
-                </button>
-                <button class="btn btn-ghost btn-circle">
-                    <div class="indicator">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-                        </svg>
-                        <span class="badge badge-xs badge-primary indicator-item"></span>
-                    </div>
-                </button>
-            </div>
+            <nav class="menu-link">
+                <ul>
+                    <li><a href="javascript:;"><i class="fa-solid fa-house mrr-10"></i>Home</a></li>
+                    <li><a href="javascript:;"><i class="fa-solid fa-list-ul mrr-10"></i>Categorias</a></li>
+                    <li><a href="javascript:;"><i class="fa-regular fa-newspaper mrr-10"></i>Noticias</a></li>
+                    <li><a href="javascript:;"><i class="fa-solid fa-shop mrr-10"></i>Loja</a></li>
+                    <li><a href="javascript:;"><i class="fa-solid fa-magnifying-glass mrr-10"></i>Pesquisar</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <!-- BANNER -->
-        <div class="hero min-h-screen" style="background-image: url(https://placeimg.com/1000/800/arch);">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn-primary">Get Started</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- call to action -->
-        <div class="bg-gray-50">
-            <div
-                class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    <span class="block">Ready to dive in?</span>
-                    <span class="block text-indigo-600">Start your free trial today.</span>
-                </h2>
-                <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-                    <div class="inline-flex rounded-md shadow">
-                        <a href="#"
-                           class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700">Get
-                            started</a>
-                    </div>
-                    <div class="ml-3 inline-flex rounded-md shadow">
-                        <a href="#"
-                           class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50">Learn
-                            more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <main>
-
-            <?= $this->fetch('content') ?>
-        </main>
-
-
+    </section>
+    <section class="sec-header-bottom"></section>
+</header>
+<main>
+    <?= $this->fetch('content') ?>
+</main>
+<footer>
+    <div class="w-100 float-left">
+        <h1>Footer</h1>
     </div>
-    <!-- SUBMENU OCULTo -->
-    <div class="drawer-side">
-        <label for="my-drawer" class="drawer-overlay"></label>
-        <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
-            <!-- Sidebar content here -->
-            <li><a>Sidebar Item 1</a></li>
-            <li><a>Sidebar Item 2</a></li>
-
-        </ul>
-    </div>
-</div>
-
-
+</footer>
 <?php
 echo $this->Html->script([
     'vendor/jquery-3.5.1.min',
+    'all.min', //FontAwesome 6.2
 //    'vendor/modernizr-3.6.0.min',
 //    'jquery.counterup.min',
 //    'jquery.scrollUp.min',
@@ -222,9 +98,9 @@ echo $this->Html->script([
 //    'owl.carousel.min',
 //    'isotope.pkgd.min',
 //    'imagesloaded.pkgd.min',
-    'plugins',
-    'bisness-main',
-    'yall',
+//    'plugins',
+//    'bisness-main',
+//    'yall',
 
 ]);
 ?>
